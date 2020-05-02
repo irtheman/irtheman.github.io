@@ -1,0 +1,365 @@
+---
+---
+
+/*———————————–———————————–
+  Base Settings
+———————————–———————————–*/
+
+$container-desktop: 970px;
+$container-large-desktop: 970px;
+
+$font-family-base: "et-book", "Lato", sans-serif;
+$headings-font-family: "et-book", "Lato", sans-serif;
+$headings-font-weight: 400;
+
+$font-size-base: 14px;
+$font-size-h1: floor(($font-size-base * 2.5));
+$font-size-h2: floor(($font-size-base * 1.6));
+$font-size-h3: floor(($font-size-base * 1));
+$font-size-h4: floor(($font-size-base * 1.2));
+$font-size-h5: floor(($font-size-base * 1));
+$font-size-h6: floor(($font-size-base * 1));
+$blockquote-font-size: floor(($font-size-base * 1.25));
+$line-height-base: 1.5;
+$headings-line-height: 1.3;
+
+$grid-gutter-width: 20px;
+
+$bg-color: #fffff8;
+$contrast-color: #a00000;
+$border-color: #333333;
+$link-style: underline;
+
+/*———————————–———————————–
+  Base spaces
+———————————–———————————–*/
+
+$space-xs: 5px;
+$space-sm: 10px;
+$space-md: 20px;
+$space-lg: 30px;
+
+@import "bootstrap-sass/bootstrap";
+
+/*———————————–———————————–
+  Overwrite Bootstrap
+———————————–———————————–*/
+
+/*++ Base Tags +++++++++++++++++++++++*/
+
+body {
+  background-color: $bg-color;
+}
+
+header,
+footer {
+  font-size: $font-size-base + 1;
+}
+
+header {
+  padding: $space-md 0 $space-lg;
+}
+
+footer {
+  padding: $space-md 0 ($space-md * 3);
+}
+
+/* Heading */
+
+h1, h2, h3, h4, h5, h6,
+.panel-title,
+.resume-contact {
+  color: #000000;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  text-align: center;
+  + * {
+    margin-top: $space-lg;
+  }
+}
+
+h3 {
+  margin: 0;
+}
+
+/* Other Base Tags */
+
+ul {
+  padding-left: $space-md;
+}
+
+pre {
+  margin: $space-md 0;
+}
+
+/*++ Classes +++++++++++++++++++++++*/
+
+/* Panel */
+
+.panel {
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+
+.panel-default {
+  border: none;
+}
+
+.panel-default > .panel-heading {
+  background-color: #e6ffff;
+  border: none;
+}
+
+.panel-heading {
+  height: 35px;
+  overflow: hidden;
+}
+
+.panel-title {
+  font-size: $font-size-base - 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.panel-body {
+  height: 280px;
+  overflow: hidden;
+}
+
+/* Navbar */
+
+.navbar-default {
+  background-color: #FFF;
+}
+
+.navbar {
+  margin-bottom: $space-md * 2;
+}
+
+/* Button */
+
+.btn {
+  font-size: $font-size-base;
+}
+
+.btn-primary {
+  @include button-variant(#fff, #e6ffff, darken(#ccffff, 10%));
+}
+
+/* Modal */
+
+.modal-body,
+.modal-footer {
+  text-align: center;
+  /* color: #e6ffff; */
+
+  img {
+    border: 1px solid /* #e33ffff */;
+ 
+    + p {
+      margin-top: $space-md;
+    }
+  }
+}
+
+/*———————————–———————————–
+  Styles
+———————————–———————————–*/
+
+/*++ Resume Top & Bottom Area +++++++++++++++++++++++*/
+
+.resume-top,
+.resume-bottom {
+  background-color: #fff;
+}
+
+.resume-top {
+  border-top: 7px solid /* #e6ffff */;
+}
+
+/* Resume Intro */
+
+.resume-intro {
+  margin-top: $space-sm;
+  text-align: center;
+}
+
+.resume-intro-maintitle {
+  display: block;
+  color: #e6ffff;
+  font-size: 40px;
+}
+
+.resume-intro-subtitle {
+  margin-top: $space-lg;
+  font-size: $font-size-base + 4;
+}
+
+.resume-intro-btns {
+  margin-top: $space-lg;
+
+  p:last-child {
+    margin-top: $space-lg;
+  }
+}
+
+/* Resume Explanations */
+
+.resume-explanations {
+  margin-top: $space-lg;
+
+  ul > li + li {
+    margin-top: $space-md;
+  }
+}
+
+.resume-explanations-btn {
+  margin-top: $space-lg;
+  text-align: center;
+}
+
+script + p {
+  margin-top: $space-lg;
+}
+
+/*++ Resume Content Area +++++++++++++++++++++++*/
+
+.resume-nav {
+  padding-top: 7px;
+  color: #999;
+  text-align: center;
+}
+
+.resume-dropdown {
+  display: inline-block;
+  margin: 0 $space-xs 0 $space-sm;
+}
+
+.resume-content {
+  padding-top: $space-md * 2;
+  padding-bottom: $space-md;
+
+  .row + .row {
+    padding-top: $space-md;
+  }
+}
+
+.resume-pic {
+  float: left;
+  img {
+    border: 1px solid #000000;
+  }
+
+  + .resume-baseinfo {
+    margin-left: 140px;
+  }
+}
+
+.resume-baseinfo {
+  p {
+    /* color: #e6ffff; */
+    font-size: $font-size-base - 1;
+  }
+}
+
+.resume-contact {
+  font-size: $font-size-base - 1;
+  word-wrap: break-word;
+
+  p {
+    margin-bottom: $space-xs;
+  }
+}
+
+.resume-subheading {
+  margin: $space-xs 0 $space-xs;
+  font-size: $font-size-base;
+}
+
+.resume-duration {
+  margin-bottom: 0;
+}
+
+.resume-duration,
+.resume-location {
+  line-height: 1;
+}
+
+.resume-view-pdf {
+  margin:  $space-sm 0 $space-md;
+  text-align: center;
+}
+
+@media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
+  .panel-body {
+    height: 320px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .panel-body {
+    height: auto;
+  }
+
+  .resume-content {
+    padding-top: $space-md;
+  }
+
+  .resume-pic {
+    float: none;
+    margin-bottom: $space-sm;
+
+    + .resume-baseinfo {
+      margin-left: 0;
+    }
+  }
+}
+
+@media print {
+  @include make-grid(sm);
+
+  @page {
+    size: US-Letter;
+  }
+
+  body {
+    background-color: transparent !important;
+    border: none;
+  }
+
+  ul {
+    padding-left: $space-md - 5;
+  }
+
+  .resume-pic {
+    float: left;
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+
+    + .resume-baseinfo {
+      margin-left: 140px;
+    }
+  }
+
+  .panel {
+    box-shadow: none;
+    border: 1px solid #eee;
+  }
+
+  .panel-heading {
+    height: 35px;
+    overflow: hidden;
+  }
+
+  .panel-body {
+    height: 280px;
+  }
+}
