@@ -28,7 +28,6 @@ $grid-gutter-width: 20px;
 $bg-color: #fffff8;
 $contrast-color: #a00000;
 $border-color: #333333;
-$link-style: underline;
 
 /*———————————–———————————–
   Base spaces
@@ -300,71 +299,121 @@ script + p {
   text-align: center;
 }
 
-@media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
-  .panel-body {
-    height: 320px;
-  }
+/*SKILLS*/
+.progress {
+    position: relative;
+    height: 4px;
+    display: block;
+    width: 10%;
+    background-color: #c2c2c2;
+    border-radius: 2px;
+    margin: 0.5rem 0 1rem 0;
+		height: 2px;
+		overflow: visible;
 }
 
-@media (max-width: $screen-xs-max) {
-  .panel-body {
-    height: auto;
-  }
-
-  .resume-content {
-    padding-top: $space-md;
-  }
-
-  .resume-pic {
-    float: none;
-    margin-bottom: $space-sm;
-
-    + .resume-baseinfo {
-      margin-left: 0;
-    }
-  }
+.progress .determinate {
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    background-color: black;
 }
 
-@media print {
-  @include make-grid(sm);
+.progress .determinate .fa {
+    font-size: 12px;
+    position: absolute;
+		top: -15px;
+		right: -20px;
+    margin-left: 10%;
+		color: #aa0000 /* white; */
+}
 
-  @page {
-    size: US-Letter;
-  }
+/* Github Ribbon */
+.github-fork-ribbon {
+  width: 12.1em;
+  height: 12.1em;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  pointer-events: none;
+  font-size: 13px;
+  text-decoration: none;
+  text-indent: -999999px;
+}
 
-  body {
-    background-color: transparent !important;
-    border: none;
-  }
+.github-fork-ribbon.fixed {
+  position: fixed;
+}
 
-  ul {
-    padding-left: $space-md - 5;
-  }
+.github-fork-ribbon:before, .github-fork-ribbon:after {
+  /* The right and left classes determine the side we attach our banner to */
+  position: absolute;
+  display: block;
+  width: 15.38em;
+  height: 1.54em;
+  top: 3.23em;
+  right: -3.23em;
+  box-sizing: content-box;
+  transform: rotate(45deg);
+}
 
-  .resume-pic {
-    float: left;
+.github-fork-ribbon:before {
+  content: "";
+  /* Add a bit of padding to give some substance outside the "stitching" */
+  padding: .38em 0;
+  /* Set the base colour */
+  background-color: #1fac61;
+  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.15));
+  /* Add a drop shadow */
+  box-shadow: 0 0.15em 0.23em 0 rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+}
 
-    img {
-      width: 120px;
-      height: 120px;
-    }
+.github-fork-ribbon:after {
+  /* Set the text from the title attribute */
+  content: attr(title);
+  /* Set the text properties */
+  color: #fff;
+  font: 700 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.54em;
+  text-decoration: none;
+  text-shadow: 0 -0.08em rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-indent: 0;
+  /* Set the layout properties */
+  padding: .15em 0;
+  margin: .15em 0;
+  /* Add "stitching" effect */
+  border-width: .08em 0;
+  border-style: dotted;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
 
-    + .resume-baseinfo {
-      margin-left: 140px;
-    }
-  }
+.github-fork-ribbon.left-top, .github-fork-ribbon.left-bottom {
+  right: auto;
+  left: 0;
+}
 
-  .panel {
-    box-shadow: none;
-    border: 1px solid #eee;
-  }
+.github-fork-ribbon.left-bottom, .github-fork-ribbon.right-bottom {
+  top: auto;
+  bottom: 0;
+}
 
-  .panel-heading {
-    height: 35px;
-    overflow: hidden;
-  }
+.github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-bottom:after {
+  right: auto;
+  left: -3.23em;
+}
 
-  .panel-body {
-    height: 280px;
-  }
+.github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-bottom:after, .github-fork-ribbon.right-bottom:before, .github-fork-ribbon.right-bottom:after {
+  top: auto;
+  bottom: 3.23em;
+}
+
+.github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.right-bottom:before, .github-fork-ribbon.right-bottom:after {
+  transform: rotate(-45deg);
 }

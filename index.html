@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/stylesheets/resume.css" | prepend:site.baseurl }}">
     <link rel="stylesheet" href="{{ "/stylesheets/tufte.css" | prepend:site.baseurl }}">
     <link rel="stylesheet" href="{{ "/stylesheets/latex.css" | prepend:site.baseurl }}">
@@ -23,32 +23,12 @@
     <![endif]-->
   </head>
   <body>
+    <a class="github-fork-ribbon no-tufte-underline" href="/about/" title="About">About</a>
     <div class="container resume-content">
       <div class="row">
         <div class="col-sm-7 clearfix">
           <figure class="resume-pic">
             <img src="{{ site.data.resume.photo }}" class="img-rounded" width="120" height="120">
-            <nav class="navbar navbar-default hidden-print hidden-xs" role="navigation">
-              <div class="resume-nav">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveAsPdf">
-                  Save as PDF
-                </button>
-                <div class="modal fade" id="saveAsPdf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <img src="{{ "/images/resume_print_dialog.png" | prepend:site.baseurl }}" class="img-rounded" width="400" height="342">
-                        <p>Warning: Currently, PDF Save works the best on Chrome.</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button onclick="window.print()" class="btn btn-primary">Open Print Dialog</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                   </div>
-                  </div>
-                </div>
-              </div>
-            </nav>
           </figure>
           <div class="resume-baseinfo">
             <h1>{{ site.data.resume.name }}</h1>
