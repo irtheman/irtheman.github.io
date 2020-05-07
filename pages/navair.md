@@ -3,7 +3,7 @@ layout: default
 title: NAVAIR
 permalink: /navair/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Resume">Resume</a>
+<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # NAVAIR
 ## January 2019 - November 2019
 ------

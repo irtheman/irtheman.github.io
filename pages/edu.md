@@ -3,7 +3,7 @@ layout: default
 title: College
 permalink: /edu/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Resume">Resume</a>
+<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # College Education
 ## 1992 - 2001
 ------

@@ -3,7 +3,7 @@ layout: default
 title: Smartronix
 permalink: /smartronix/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Resume">Resume</a>
+<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # Smartronix
 ## August 2015 - January 2019
 ------

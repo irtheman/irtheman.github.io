@@ -3,7 +3,7 @@ layout: default
 title: AeroVironment
 permalink: /aerovironment/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Resume">Resume</a>
+<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # AeroVironment
 ## July 2010 - September 2013
 ------
