@@ -22,5 +22,6 @@ Things Matthew likes to do include hiking, photography, programming, caring for 
 
 ## Matthew's URLs
 [Matthew Hanna's Resume](https://matthewhanna.net)  
+[Matthew Hanna's Resume](https://matthewhanna.com)  
 [Matthew Hanna's Software Development Blog](https://blog.matthewhanna.net)  
 [Matthew Hanna's Personal Blog](https://matthewhanna.me)  
