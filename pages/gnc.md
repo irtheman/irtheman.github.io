@@ -17,3 +17,14 @@ Projects:
 - (Software Engineer, The Pacific Bridge Companies, Monrovia, CA). Matthew developed a solution to map data from one specially designed PDF document to another different PDF document. The final intention was to populate Microsoft SharePoint forms with data from given PDFs and to also use data stored in Microsoft SharePoint to dynamically generate other PDFs.
 - (Software Engineer, Warner Brothers Studios, Burbank, CA). Matthew provided Hummingbird / OpenText eDocs support and maintenance using VB.Net.
 - (Software Engineer, Walt Disney Studios, Burbank, CA). Matthew provided basic Microsoft SharePoint development to demonstrate Microsoft SharePoint features.
+
+**Pros:**
+* Working with a variety of clients in a close manner making better products easier to deliver
+* Awesome problems to solve
+* Weekly phone conversations as others shared how they were solving complex problems
+* Frequent "hand-shake" contracts made things more flexible
+
+**Cons:**
+* Very low salary with promises to improve wages that were rarely followed through with
+* Many new co-workers often quit very quickly
+* Frequent "hand-shake" contracts made GNC hard to appease

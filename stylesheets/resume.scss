@@ -37,6 +37,7 @@ $space-xs: 5px;
 $space-sm: 10px;
 $space-md: 20px;
 $space-lg: 30px;
+$space-xl: 40px;
 
 @import "bootstrap-sass/bootstrap";
 
@@ -89,7 +90,19 @@ h3 {
 /* Other Base Tags */
 
 ul {
-  padding-left: $space-md;
+  padding-left: $space-xl;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+li:not(:first-of-type) {
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+li:not(:last-of-type) {
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 pre {
@@ -291,7 +304,7 @@ script + p {
 .resume-location {
   line-height: 1;
   font-size: $font-size-base;
-  margin: #space-sm 0 $space-sm;
+  margin: $space-sm 0 $space-sm;
 }
 
 .resume-summary {
@@ -330,7 +343,7 @@ script + p {
 		top: -15px;
 		right: -20px;
     margin-left: 10%;
-		color: #aa0000 /* white; */
+		color: #aa0000 /* red; */
 }
 
 /* Github Ribbon */
