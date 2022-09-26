@@ -1,5 +1,5 @@
 ---
-type: "Work Experience"
+type: "Work&nbsp;Experience"
 heading: "Smartronix"
 subheading: "Software Engineer II"
 duration: "August 2015 - January 2019 &#x00B7; 3 yrs 6 mos"

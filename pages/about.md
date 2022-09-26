@@ -6,10 +6,10 @@ permalink: /about/
 <a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # Matthew Hanna
 ## Software Engineer
-------
+<hr class="hr-plain">
 
 ### History
-Matthew Hanna, an introvert, moved to California in 2007 and currently lives in Montrose, California. He started life in West Virginia and bounced up and down the east coast for a quite a while. Eventually Matthew started college at Coastal Carolina University in 1992. He was already well experienced in computers and programming so he ended up actually running a lab and filling the role of teacher's assistant in a few courses. There were a few ups-and-downs along the way but he was still happy. Not long after graduating Matthew then moved on to a short effort at acquiring a Masters Degree in Theoretical Computer Science at Clemson University around 1999. How fun! Upon graduation his software engineering career kicked off starting in Rhode Island, moving to California, and now lives in Virginia.
+Matthew Hanna, an introvert, lives in Alexandria, VA, as of August 2020. He started life in West Virginia and bounced up and down the east coast for a quite a while. Eventually Matthew started college at Coastal Carolina University in 1992. He was already well experienced in computers and programming so he ended up actually running a lab and filling the role of teacher's assistant in a few courses. There were a few ups-and-downs along the way but he was still happy. Not long after graduating Matthew then moved on to a short effort at acquiring a Masters Degree in Theoretical Computer Science at Clemson University around 1999. How fun! Upon graduation his software engineering career kicked off starting in Rhode Island, moving to California, and now lives in Virginia.
 
 ### Hardware
 Matthew currently has 2 Dell XPS computers with 32GB memory, 1TB SSD, and a 4TB secondary hard drive. There is also a compatible laptop, Dell Inspiron, also running 32GB memory and a 250GB SSD. They are all using NVidia graphics cards. Such wonderful equipment! There is also a DIY NAS with 20TB of storage in his home as well.

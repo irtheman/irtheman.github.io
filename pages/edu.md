@@ -6,7 +6,7 @@ permalink: /edu/
 <a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # College Education
 ## 1992 - 2001
-------
+<hr class="hr-plain">
 
 # Coastal Carolina University
 ## Bachelors of Science Degree in Computer Science with Mathematics Minor

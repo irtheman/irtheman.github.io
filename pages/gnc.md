@@ -6,7 +6,7 @@ permalink: /gnc/
 <a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # General Networks Corporation
 ## January 2008 - January 2010
-------
+<hr class="hr-plain">
 
 GNC was a consulting firm with many clients in the LA and Hollywood areas.
 

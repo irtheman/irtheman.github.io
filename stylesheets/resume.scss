@@ -5,14 +5,15 @@
   Base Settings
 ———————————–———————————–*/
 
+$container-mobile: 500px;
 $container-desktop: 1280px;
-$container-large-desktop: 1280px;
+$container-large-desktop: 1400px;
 
-$font-family-base: "et-book", "Lato", sans-serif;
-$headings-font-family: "et-book", "Lato", sans-serif;
+$font-family-base: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+$headings-font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 $headings-font-weight: 400;
 
-$font-size-base: 14px;
+$font-size-base: 15px;
 $font-size-h1: floor(($font-size-base * 2.5));
 $font-size-h2: floor(($font-size-base * 1.6));
 $font-size-h3: floor(($font-size-base * 1));
@@ -28,6 +29,7 @@ $grid-gutter-width: 20px;
 $bg-color: #fffff8;
 $contrast-color: #a00000;
 $border-color: #333333;
+$title-color: #E1FFE1;
 
 /*———————————–———————————–
   Base spaces
@@ -39,6 +41,15 @@ $space-md: 20px;
 $space-lg: 30px;
 $space-xl: 40px;
 
+@font-face {
+  font-family: "et-book";
+  src: url("/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"),
+  url("/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"),
+  url("/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot") format("embedded-opentype"),
+  url("/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
 @import "bootstrap-sass/bootstrap";
 
 /*———————————–———————————–
@@ -48,7 +59,12 @@ $space-xl: 40px;
 /*++ Base Tags +++++++++++++++++++++++*/
 
 body {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font-family-base;
   background-color: $bg-color;
+  color: #111;
+  max-width: container-large-desktop;
 }
 
 header,
@@ -70,6 +86,11 @@ h1, h2, h3, h4, h5, h6,
 .panel-title,
 .resume-contact {
   color: #000000;
+  font-weight: 400;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  line-height: 1; 
 }
 
 h1 {
@@ -122,7 +143,7 @@ pre {
 }
 
 .panel-default > .panel-heading {
-  background-color: #e6ffff;
+  background-color: $title-color;
   border: none;
 }
 
@@ -139,7 +160,7 @@ pre {
 }
 
 .panel-body {
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   text-overflow: clip;
   display: -webkit-box;
@@ -277,17 +298,29 @@ script + p {
 }
 
 .resume-baseinfo {
+  text-align: left;
+  
   p {
-    font-size: $font-size-base - 1;
+    font-size: $font-size-base + 3;
   }
 }
 
 .resume-contact {
-  font-size: $font-size-base - 1;
-  word-wrap: break-word;
+  column-span: all;
+  font-size: $font-size-base + 2;
+
+  div {
+    top: 0px;
+    float: left;
+    padding-left: 1em;
+  }
+}
+
+.resume-download {
+  text-align: center;
 
   p {
-    margin-bottom: $space-xs;
+    font-size: $font-size-base + 3;
   }
 }
 
@@ -314,6 +347,58 @@ script + p {
 .resume-view-pdf {
   margin:  $space-sm 0 $space-md;
   text-align: center;
+}
+
+.hr-plain {
+  margin: $space-md 0;
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  height: 1.5em;
+  opacity: 1;
+  background: linear-gradient(to right, transparent, black, transparent);
+  width: 100%;
+}
+
+.hr-text {
+  margin: auto;
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 1;
+  &:before {
+    content: '';
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, black, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: black;
+    background-color: $title-color;
+    font-size: $font-size-base - 2;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    }
 }
 
 /*SKILLS*/
@@ -433,4 +518,17 @@ script + p {
 
 .github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.right-bottom:before, .github-fork-ribbon.right-bottom:after {
   transform: rotate(-45deg);
+}
+
+@media screen and (max-width: $container-mobile) {
+  .resume-baseinfo {
+    h1 {
+      font-size: 350%!important;
+      line-height: 120%!important;
+    }
+  }
+  
+  .resume-contact {
+    font-size: $font-size-base - 2;
+  }
 }

@@ -6,7 +6,7 @@ permalink: /navair/
 <a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # NAVAIR
 ## January 2019 - November 2019
-------
+<hr class="hr-plain">
 
 NAVAIR was a government job. There isn't really much Matthew can talk about though some very general topics might be possible.
 

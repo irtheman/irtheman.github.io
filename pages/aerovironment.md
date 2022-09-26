@@ -6,7 +6,7 @@ permalink: /aerovironment/
 <a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # AeroVironment
 ## July 2010 - September 2013
-------
+<hr class="hr-plain">
 
 Aerovironment manufactured and tested a variety of drones for the military.
 

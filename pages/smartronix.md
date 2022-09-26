@@ -6,7 +6,7 @@ permalink: /smartronix/
 <a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # Smartronix
 ## August 2015 - January 2019
-------
+<hr class="hr-plain">
 
 Smartronix was a government contractor job. There isn't a whole lot Matthew can talk about unless the focus is one very hand-wavy work experience.
 
