@@ -3,7 +3,6 @@ layout: default
 title: Omnigo
 permalink: /omnigo/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # Omnigo
 ## August 2020 - July 2021
 <hr class="hr-plain">

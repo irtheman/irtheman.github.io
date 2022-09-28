@@ -349,6 +349,12 @@ script + p {
   text-align: center;
 }
 
+.resume-footer {
+  margin:  $space-sm 0 $space-md;
+  text-align: center;
+  font-size: $font-size-base - 2;
+}
+
 .hr-plain {
   margin: auto;
   border: 0;

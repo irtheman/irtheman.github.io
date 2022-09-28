@@ -3,12 +3,11 @@ layout: default
 title: AeroVironment
 permalink: /aerovironment/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # AeroVironment
 ## July 2010 - September 2013
 <hr class="hr-plain">
 
-Aerovironment manufactured and tested a variety of drones for the military.
+AeroVironment manufactured and tested a variety of drones for the military.
 
 In this role, Matthew performed software design, programming, and maintenance in C#, VB.Net, C, and C++ for various existing and newly developed applications. The job involved handled maintenance and implementation of FalconView Map Application plugins used for communicating with simulators and actual Small Unmanned Air Vehicles (SUAVs) using serial, UDP, and TCP protocols that were both open and proprietary.
 

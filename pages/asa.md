@@ -3,7 +3,6 @@ layout: default
 title: ASA
 permalink: /asa/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # Applied Science Associates, Inc.
 ## November 2002 - May 2007
 <hr class="hr-plain">

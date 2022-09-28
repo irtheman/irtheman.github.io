@@ -3,7 +3,6 @@ layout: default
 title: GNC
 permalink: /gnc/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # General Networks Corporation
 ## January 2008 - January 2010
 <hr class="hr-plain">

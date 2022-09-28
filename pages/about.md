@@ -3,7 +3,6 @@ layout: default
 title: About
 permalink: /about/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # Matthew Hanna
 ## Software Engineer
 <hr class="hr-plain">

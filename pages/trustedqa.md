@@ -3,7 +3,6 @@ layout: default
 title: TrustedQA
 permalink: /trustedqa/
 ---
-<a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
 # TrustedQA
 ## July 2021 - June 2022
 <hr class="hr-plain">

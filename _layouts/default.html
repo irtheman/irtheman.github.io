@@ -21,9 +21,14 @@
     <![endif]-->
   </head>
   <body>
+    <a class="github-fork-ribbon no-tufte-underline" href="../index.html" title="Portfolio">Portfolio</a>
     {{ content }}
+    <hr class="hr-plain">
+    <div class="row resume-footer">
+      Created By Matthew Hanna | Custom Jenkins | Static Website Repository <a href="https://github.com/irtheman/irtheman.github.io">https://github.com/irtheman/irtheman.github.io</a>
+    </div>
     <script src="{{ "/javascripts/jquery.min.js" | prepend:site.baseurl }}"></script>
     <script src="{{ "/javascripts/bootstrap.min.js" | prepend:site.baseurl }}"></script>
     {% include scripts.html %}
-  </body>
+</body>
 </html>
