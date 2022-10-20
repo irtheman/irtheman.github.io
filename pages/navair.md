@@ -21,6 +21,6 @@ Projects:
 * New opportunities to demonstrate modern technology that could one day, maybe a few years out, be utilized
 
 **Cons:**
-* Per the on-base therapist, there were numerous narcissists (co-workers and staff), psychopaths (a supervisor) and an actual known sociopath (not encountered)
+* Per the on-base therapist, there were numerous narcissists (co-workers and staff) and a sociopath (a supervisor)
 * Frequent damage to personal property (car, computer, books, etc) while on base
-* Physical assault including being pushed down stairs and threats to find one in the parking lot
+* Physical assault including being pushed down stairs and threats to find a person in the parking lot

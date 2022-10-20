@@ -26,11 +26,11 @@ etc), Node.js, C#, and Sql. Deployment was done using various means but the fina
 * Promises of new innovative projects coming
 
 **Cons (TrustedQA):**
-* Health benefits were not so great
+* Health benefits were not so great but better than other jobs from the past
 
 **Cons (Spalding -> Navy):**
 * Project lead quit their job thus promoting a fellow co-worker to the new role which significantly changed the "job description"
-* Other co-workers would join and quickly leave and eventually, at a certain point, there were only 2 programmers left on the project
+* Other co-workers would join and quickly leave. At a certain point, there were only 2 programmers left on the project
 * Two cases of Nepotism in yet another government project
 * Observed leadership fire a person due to them having seizures that were not under control yet
 
