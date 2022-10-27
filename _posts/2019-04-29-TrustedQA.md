@@ -2,7 +2,7 @@
 type: "Work&nbsp;Experience"
 heading: "TrustedQA"
 subheading: "Senior Software Engineer"
-duration: "July 2021 - June 2022 &#x00B7; 11 mos"
+duration: "July 2021 - June 2022 &#x00B7; 1 yr"
 location: "Alexandria, VA"
 ---
 
