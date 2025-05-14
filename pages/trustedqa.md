@@ -9,8 +9,8 @@ permalink: /trustedqa/
 
 TrustedQA is a proven leader in providing high-quality and innovative IT modernization solutions and professional services.  As a Small Business established in 1988, their unwavering mission continues to be helping customers in both the U.S. Government and commercial industry build and deliver quality systems more efficiently, effectively, and securely. 
 
-TrustedQA was a sub-contractor for Spalding who was a contractor for the USA Navy service called NavAir. The work Matthew did involved maintaining a few specific Navy website applications using JavaScript (require.js, knockout, react, jQuery,
-etc), Node.js, C#, and Sql. Deployment was done using various means but the final, and best deployment, was using OpenShift as a deployment pipeline involving Jenkins, Docker, NexusIQ and other services.
+TrustedQA was a subcontractor for Spalding who was a contractor for the USA Navy service called NavAir. The work Matthew did involved maintaining a few specific Navy website applications using JavaScript (require.js, knockout, react, jQuery,
+etc.), Node.js, C#, and SQL. Deployment was done using various means but the final, and best deployment, was using OpenShift as a deployment pipeline involving Jenkins, Docker, NexusIQ and other services.
 
 **Pros (TrustedQA):**
 * Matthew's second attempt at remote work complicated by the COVID-19 pandemic

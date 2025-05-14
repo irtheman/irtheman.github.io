@@ -1,0 +1,3 @@
+{"rule":"DID_BASEFORM","sentence":"^\\QThe work Matthew did involved modernizing a few specific website applications and maintaining / modifying other projects all using ASP.NET Core, Entity Framework Core, JavaScript, C#, and SQL.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE_2","sentence":"^\\QThe project was very complex and the client decided to just modernize using C#.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE_2","sentence":"^\\QA means of downloading each map with the current occupants was built in and all input was fully dynamic compared to the previous implementation.\\E$"}

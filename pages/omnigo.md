@@ -26,5 +26,5 @@ Projects:
 * Health and retirement benefits were pretty low
 * Very little documentation other than short Help PDFs provided to clients
 * To many variants of one older product making it almost impossible to help clients
-* One manager out of 2, the subject matter expert, quit their job leaving everyone hanging
-* Another manager, the backup subject matter expert, moved to another far away country for remote work making getting assistance much more difficult
+* One manager out of 2, the subject-matter expert, quit their job leaving everyone hanging
+* Another manager, the backup subject-matter expert, moved to another far away country for remote work making getting assistance much more difficult
