@@ -22,7 +22,8 @@ Tasks included designing and integrating new external interfaces (supporting mul
 
 **Pros (ETIRMS):**
 * Matthew was happy to see that really old, often 10+ years, applications were being improved
-* Willingness to accept complex ideas like heat-mapping, parallel processing, SOLID OOP, and Agile
+* Bringing in usb drives or paper were not allowed making solving complex problems without the internet really fun
+* ETERMS willingness to accept complex ideas like heat-mapping, parallel processing, SOLID OOP, and Agile
 * There were a variety of co-workers that were fun and engaging to work with
 * With effort, management would allow training courses in new programming skills
 

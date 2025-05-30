@@ -15,13 +15,13 @@ Some of the most fun tasks involved developing object-oriented flight simulators
 
 **Pros:**
 * A wide variety of projects to work on
-* Creativity was always wanted and time was given for coming up with ideas
+* Creativity was always wanted and time was given for coming up with new ideas
 * A very friendly group of co-workers
 * Awesome technology to learn and utilize
-* Frequent travel to various military bases for demonstrations
+* Frequent travel to various military bases for demonstrations and testing of equipment
 * No demand for charisma talk
 
 **Cons:**
-* Some shortly employed co-workers were overly competitive (rock-stars) who would break projects
-* A manager was a control freak who couldn't handle being proven wrong
-* The company "died" very quickly with up to 6 waves of layoffs when they sold out
+* Some shortly employed co-workers, often called rock-stars, were often overly competitive and would break projects. They were difficult to work with for many but Matthew would comply with them and, during team meetings, would indirectly bring up software issues observed to help bring awareness.
+* A manager was a control freak who couldn't handle being proven wrong; like saying a udp packet couldn't be processed quickly in C#. Matthew handled this manager by politely doing his best to comply and, in a few instances, speaking with the client and having them tell the manager what they thought should be done.
+* The company sold out and laid off almost all of their engineers while favoring hiring more managers. Hundreds were laid off through 6 waves and Matthew was caught in the 4th wave.

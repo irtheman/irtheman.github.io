@@ -22,4 +22,4 @@ Matthew created interactive Web-based visualization tools and services and utili
 * Really friendly co-workers who enjoyed exchanging knowledge
 
 **Cons:**
-* Nepotism caused a conflict with a "special" co-worker
+* Nepotism caused a conflict with a "special" co-worker, the brother of one of the business owners. This was handled very well by the business CEO and managers. Matthew was not found to have done anything wrong and was very calm and polite through the whole process. The co-worker was fired for exploitation and bullying.

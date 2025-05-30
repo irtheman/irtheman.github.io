@@ -13,7 +13,7 @@ TrustedQA was a subcontractor for Spalding who was a contractor for the USA Navy
 etc.), Node.js, C#, and SQL. Deployment was done using various means but the final, and best deployment, was using OpenShift as a deployment pipeline involving Jenkins, Docker, NexusIQ and other services.
 
 **Pros (TrustedQA):**
-* Matthew's second attempt at remote work complicated by the COVID-19 pandemic
+* Matthew's second attempt at remote work further complicated by the COVID-19 pandemic
 * Very nice management that really did care about their employees
 * Ready to help on demand
 * A growing business with lots of potential
@@ -32,5 +32,4 @@ etc.), Node.js, C#, and SQL. Deployment was done using various means but the fin
 * Project lead quit their job thus promoting a fellow co-worker to the new role which significantly changed the "job description"
 * Other co-workers would join and quickly leave. At a certain point, there were only 2 programmers left on the project
 * Two cases of Nepotism in yet another government project
-* Observed leadership fire a person due to them having seizures that were not under control yet
-
+* Observed leadership fire a person due to them having seizures that were not under control yet which felt a little scary and merciless
