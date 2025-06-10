@@ -29,6 +29,26 @@
   for (let i = 0; i < anchors.length; i++) {
     anchors[i].addEventListener('click', downloadPrompt);
   }
+
+  const images = document.querySelectorAll('img.img-rounded');
+  if (images.length > 1) {
+    const popup = document.getElementById('popup');
+    const popupImage = document.getElementById('popupImage');
+    const overlay = document.getElementById('overlay');
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].addEventListener('click', (event) => {
+        popupImage.src = event.target.src;
+        popup.style.display = 'block';
+        overlay.style.display = 'block';
+      });
+    }
+
+    overlay.addEventListener('click', () => {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    });  
+  }
 </script>
 
 <!-- Google tag (gtag.js) -->
