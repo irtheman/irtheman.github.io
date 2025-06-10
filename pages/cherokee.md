@@ -4,7 +4,7 @@ title: Cherokee Federal
 permalink: /cherokee/
 ---
 # Cherokee Federal (USGS WARC)
-## March 2023 - Present
+## March 2023 - May 2025
 <hr class="hr-plain">
 
 Cherokee Federal is a trusted team of government contracting professionals who can rapidly build innovative solutions. They work around the globe to help solve issues in national security and intelligence, information technology, health solutions, DoD logistics and human services. Their businesses serve the Cherokee Nation tribe, where 100% of their profits support building a brighter future for tribal citizens. As one with a Blackfoot (Niitsitapi) ancestry, Matthew has always been interested in working with any tribe.
