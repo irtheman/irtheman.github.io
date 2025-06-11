@@ -578,6 +578,20 @@ span.ai-hidden {
     text-align: center;
   }
 
+
+  /* Popup styling */
+  #popup {
+    top: 25%;
+    left: 5%;
+    transform: translate(-2%, 0);
+    padding: 5px;
+  }
+
+  #popup img {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
   .udemy-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
