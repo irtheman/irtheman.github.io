@@ -563,8 +563,8 @@ span.ai-hidden {
     flex-flow: row wrap;
 
     div {
-      max-width: 48%;
-      flex:0 0 48%;
+      flex: 1 1 50%;
+      white-space: nowrap;
     }
   }
 
@@ -576,5 +576,17 @@ span.ai-hidden {
     border-top: medium double black;
     color: black;
     text-align: center;
+  }
+
+  .udemy-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+
+    img {
+      border: 1px solid #000000;
+      width: 360px;
+      height: 360px;
+    }
   }
 }
