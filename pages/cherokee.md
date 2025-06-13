@@ -4,7 +4,7 @@ title: Cherokee Federal
 permalink: /cherokee/
 ---
 # Cherokee Federal (USGS WARC)
-## March 2023 - May 2025
+## March 2023 - April 2025
 <hr class="hr-plain">
 
 Cherokee Federal is a trusted team of government contracting professionals who can rapidly build innovative solutions. They work around the globe to help solve issues in national security and intelligence, information technology, health solutions, DoD logistics and human services. Their businesses serve the Cherokee Nation tribe, where 100% of their profits support building a brighter future for tribal citizens. As one with a Blackfoot (Niitsitapi) ancestry, Matthew has always been interested in working with any tribe.
@@ -18,6 +18,8 @@ Projects:
 - Occupancy Maps, a solo project, was another product modernized that provided various campus location maps with tracking of all the occupants of every room of every building at every location. A means of downloading each map with the current occupants was built in and all input was fully dynamic compared to the previous implementation.
 - PIPL was a project for tracking a specific type of bird. The project was coming to end-of-life and Matthew helped disable uploading any new information and created a means to pull the entire database into an Excel spreadsheet for a future modernized application.
 
+This job ended on April 28th, 2025 due to government furlough. The benefits and Cherokee Federal access continued until May 31st, 2025.
+
 **Pros:**
 * The best remote job for Matthew with a great team to work with and many exciting challenges
 * Cutting edge technology is always fun
@@ -26,3 +28,4 @@ Projects:
 * Very little documentation of requirements
 * The team lead and management would often go very silent ignoring emails and text messages because we were all mostly remote
 * Some team members were not very good a programming and being given feedback would be taken as an insult i.e. using strings for primary keys in the backend while they were integers in the database
+* Cherokee Federal had very little communication and quickly burned bridges when the USGS contract officially ended
