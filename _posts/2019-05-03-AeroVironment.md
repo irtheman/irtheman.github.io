@@ -1,6 +1,6 @@
 ---
 type: "Work&nbsp;Experience"
-heading: "AeroVironment"
+heading: "<a class='no-tufte-underline' href='/aerovironment/'>AeroVironment</a>"
 subheading: "Software Engineer II"
 duration: "July 2010 – September 2013 &#x00B7; 3 yrs 3 mos"
 location: "Simi Valley, CA"

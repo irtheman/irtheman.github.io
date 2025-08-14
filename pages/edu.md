@@ -8,7 +8,7 @@ permalink: /edu/
 <hr class="hr-plain">
 <p/>
 
-# Coastal Carolina University
+<h1 id="ccu">Coastal Carolina University</h1>
 ## Bachelors of Science Degree in Computer Science with Mathematics Minor
 
 Matthew Hanna started college with no parental support. He worked several jobs while trying hard to complete his B.S. in computer science. Along the way, Matthew took extra courses in foreign languages, physics and mathematics. There was enough math there to score a minor in Mathematics.
@@ -17,7 +17,7 @@ The time not consumed in study involved helping run the newly built computer lab
 
 Most of the focus in Computer Science was on algorithms, graphics and programming languages.
 
-# Clemson University
+<h1 id="cu">Clemson University</h1>
 ## Master's Degree in Theoretical Computer Science
 
 Again, Matthew worked several jobs outside the University in order to meet financial requirements. In the University, he worked as a Teaching Assistant (TA) and also as a Research Assistant (RA). As a TA, he taught basic computer usage, HTML programming, and C++. The RA role involved solving complex equations for Non-Newtonian fluid making it possible to graphically show how molecules would move through a filtration system.
