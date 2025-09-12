@@ -1,40 +1,43 @@
 ---
 ---
 
+$banner-color: #333;
+$banner-hover-color: #000;
+$banner-link-color: #23527c;
+
 .mh-banner-header {
 	position: fixed;
 	top: 0;
-	padding: 0;
+	left: 0;
 	width: 100%;
-	font-size: 10px;
-	z-index: 1000;
+	padding: 0;
+	font-size: 11px;
+	z-index: 400;
 }
 
 .mh-banner {
-	background-color: #313236;
-	color: #aaa;
+	color: $banner-color;
 	cursor: pointer;
 	width: 100%;
 	border: none;
 	text-align: center;
 	outline: none;
-	font-size: 10px;
+	font-size: 11px;
 }
 
 .banner-active,
 .mh-banner:hover {
-	color: #ffffff;
+	text-shadow: 0px 0px 1px $banner-hover-color;
 }
 
 .mh-banner:after {
 	content: '\23f7';
-	color: white;
-	font-weight: bold;
 	margin-left: 5px;
 }
 
 .banner-active:after {
 	content: "\23f6";
+	margin-left: 5px;
 }
 
 .mh-banner-content {
@@ -46,31 +49,37 @@
 	overflow: hidden;
 	font-size: 12px;
 	transition: max-height 0.2s ease-out;
-	background-color: #424347;
-	color: white;
-	z-index: 1000;
+	backdrop-filter: brightness(90%);
+	-moz-backdrop-filter: brightness(90%);
+	-webkit-backdrop-filter: brightness(90%);
+}
 
-	a {
-		color: darken(antiquewhite, 20%);
-		text-decoration: none;
-
-		&:hover {
-			color: antiquewhite;
-			text-decoration: underline;
-		}
-	}
-
-div.mh-banner-content-filler-first {
+.mh-banner-content>div.mh-banner-content-filler-first {
 	grid-column: 1 / span 5;
 }
 
-div.mh-banner-content-filler-second {
+.mh-banner-content>div.mh-banner-content-filler-second {
 	grid-column: 9 / span 4;
 }
 
-div.mh-banner-content-center {
+.mh-banner-content>div.mh-banner-content-center {
 	grid-column: 1 / span 12;
 	text-align: center;
 }
 
+.mh-banner-content a {
+	color: $banner-link-color;
+	text-decoration: none;
+}
+
+.mh-banner-content a:hover {
+	filter: brightness(90%);
+	text-decoration: underline;
+}
+
+.mh-banner-content:hover {
+	.mh-banner-header {
+		background-color: pink;
+		z-index: 1000;
+	}
 }

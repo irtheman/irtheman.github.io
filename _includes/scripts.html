@@ -1,69 +1,95 @@
 <script>
-  function downloadFile(url) {
-    const fileName = url.split('/').pop();
-    const link = document.createElement('a');
-    link.style.display = 'none';
-    link.href = url;
-    link.download = fileName;
+  document.addEventListener("DOMContentLoaded", function () {
+    function downloadFile(url) {
+      const fileName = url.split('/').pop();
+      const link = document.createElement('a');
+      link.style.display = 'none';
+      link.href = url;
+      link.download = fileName;
 
-    document.body.appendChild(link);
-    link.click();
+      document.body.appendChild(link);
+      link.click();
 
-    setTimeout(() => {
-      //URL.revokeObjectURL(link.href);
-      link.parentNode.removeChild(link);
-    }, 100);
-  }
-
-  function downloadPrompt(event) {
-    event.preventDefault();
-
-    const userConfirmed = confirm("Are you sure you want to download this file?");
-    if (userConfirmed) {
-      const url = event.target.getAttribute('data-url');
-      downloadFile(url);
+      setTimeout(() => {
+        //URL.revokeObjectURL(link.href);
+        link.parentNode.removeChild(link);
+      }, 100);
     }
-  }
 
-  const anchors = document.querySelectorAll('a[data-url]');
-  for (let i = 0; i < anchors.length; i++) {
-    anchors[i].addEventListener('click', downloadPrompt);
-  }
+    function downloadPrompt(event) {
+      event.preventDefault();
 
-  const images = document.querySelectorAll('img.img-rounded');
-  if (images.length > 1) {
-    const popup = document.getElementById('popup');
-    const popupImage = document.getElementById('popupImage');
-    const overlay = document.getElementById('overlay');
+      const userConfirmed = confirm("Are you sure you want to download this file?");
+      if (userConfirmed) {
+        const url = event.target.getAttribute('data-url');
+        downloadFile(url);
+      }
+    }
 
-    for (let i = 0; i < images.length; i++) {
-      images[i].addEventListener('click', (event) => {
-        popupImage.src = event.target.src;
-        popup.style.display = 'block';
-        overlay.style.display = 'block';
+    const anchors = document.querySelectorAll('a[data-url]');
+    for (let i = 0; i < anchors.length; i++) {
+      anchors[i].addEventListener('click', downloadPrompt);
+    }
+
+    const images = document.querySelectorAll('img.img-rounded');
+    if (images.length > 1) {
+      const popup = document.getElementById('popup');
+      const popupImage = document.getElementById('popupImage');
+      const overlay = document.getElementById('overlay');
+
+      for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', (event) => {
+          popupImage.src = event.target.src;
+          popup.style.display = 'block';
+          overlay.style.display = 'block';
+        });
+      }
+
+      overlay.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
       });
     }
 
-    overlay.addEventListener('click', () => {
-      popup.style.display = 'none';
-      overlay.style.display = 'none';
+    var codeBlocks = document.querySelectorAll("pre > code");
+    codeBlocks.forEach(function (codeBlock) {
+      var pre = codeBlock.parentNode;
+      var button = document.createElement("button");
+      button.className = "copy-button";
+      button.type = "button";
+      button.innerText = "Copy";
+
+      button.addEventListener("click", function () {
+        navigator.clipboard.writeText(codeBlock.innerText).then(function () {
+          button.innerText = "Copied!";
+          setTimeout(function () {
+            button.innerText = "Copy";
+          }, 2000);
+        }, function (err) {
+          console.error("Could not copy text: ", err);
+        });
+      });
+
+      pre.parentNode.insertBefore(button, pre);
     });
-  }
+});
 </script>
 
 <script>
-  const header = document.querySelector("header");
-  if (header) {
-    header.innerHTML = `
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector(".mh-banner-header");
+    if (header) {
+      header.innerHTML = `
     <button class="mh-banner">Matthew's Official Website</button>
     <div class="mh-banner-content">
+        <div class="mh-banner-content-center">&nbsp;</div>
         <div class="mh-banner-content-center"><strong>Welcome to one of Matthew's official websites!</strong><br/></div>
         <div class="mh-banner-content-filler-first">&nbsp;</div>
         <div>
             <strong>Matthew's Websites</strong><br/
             <ul>
                 <li><a href="https://matthewhanna.com">Business Website</a></li>
-                <li><a href="https://matthewhanna.net">Resume Website</a></li>
+                <li><a href="https://matthewhanna.net">Resume Website</a> &check;</li>
                 <li><a href="https://blog.matthewhanna.net">Coding Blog</a></li>
                 <li><a href="https://matthewhanna.me">Personal Blog</a></li>
             </ul>
@@ -81,19 +107,31 @@
     </div>
 `;
 
-    const coll = document.getElementsByClassName("mh-banner");
-    for (let i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+      if (!header.style.backgroundColor) {
+          header.style.backgroundColor = window.getComputedStyle(document.body).getPropertyValue("background-color");
+      }
+
+      const banner = header.querySelector(".mh-banner");
+      if (banner) {
+        if (!header.style.color) {
+          header.style.color = window.getComputedStyle(banner).getPropertyValue("color");
+          console.log(`${window.getComputedStyle(header).getPropertyValue("background-color")}`);
         }
-      });
+
+        banner.addEventListener("click", function () {
+          this.classList.toggle("banner-active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            header.style.zIndex = 400;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            header.style.zIndex = 1000;
+          }
+        });
+      }
     }
-  }
+  });
 </script>
 
 <!-- Google tag (gtag.js) -->
