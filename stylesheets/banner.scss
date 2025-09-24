@@ -12,74 +12,71 @@ $banner-link-color: #23527c;
 	width: 100%;
 	padding: 0;
 	font-size: 11px;
-	z-index: 400;
-}
+	z-index: 250;
 
-.mh-banner {
-	color: $banner-color;
-	cursor: pointer;
-	width: 100%;
-	border: none;
-	text-align: center;
-	outline: none;
-	font-size: 11px;
-}
+	&:has(.banner-active) {
+		z-index: 750;
+	}
 
-.banner-active,
-.mh-banner:hover {
-	text-shadow: 0px 0px 1px $banner-hover-color;
-}
+	.mh-banner {
+		color: $banner-color;
+		cursor: pointer;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+		font-size: 11px;
 
-.mh-banner:after {
-	content: '\23f7';
-	margin-left: 5px;
-}
+		&:hover, .banner-active {
+			text-shadow: 0px 0px 1px $banner-hover-color;
+		}
 
-.banner-active:after {
-	content: "\23f6";
-	margin-left: 5px;
-}
+		.banner-active:after {
+			content: "\23f6";
+			margin-left: 5px;
+			z-index: 750;
+		}
 
-.mh-banner-content {
-	display: grid;
-	grid-template-columns: repeat(1fr, 12);
-	gap: 5px;
-	padding: 0 18px;
-	max-height: 0;
-	overflow: hidden;
-	font-size: 12px;
-	transition: max-height 0.2s ease-out;
-	backdrop-filter: brightness(90%);
-	-moz-backdrop-filter: brightness(90%);
-	-webkit-backdrop-filter: brightness(90%);
-}
+		&:after {
+			content: '\23f7';
+			margin-left: 5px;
+		}
+	}
 
-.mh-banner-content>div.mh-banner-content-filler-first {
-	grid-column: 1 / span 5;
-}
+	.mh-banner-content {
+		display: grid;
+		grid-template-columns: repeat(1fr, 12);
+		gap: 5px;
+		padding: 0 18px;
+		max-height: 0;
+		overflow: hidden;
+		font-size: 12px;
+		transition: max-height 0.2s ease-out;
+		backdrop-filter: brightness(90%);
+		-moz-backdrop-filter: brightness(90%);
+		-webkit-backdrop-filter: brightness(90%);
 
-.mh-banner-content>div.mh-banner-content-filler-second {
-	grid-column: 9 / span 4;
-}
+		div.mh-banner-content-filler-first {
+			grid-column: 1 / span 5;
+		}
 
-.mh-banner-content>div.mh-banner-content-center {
-	grid-column: 1 / span 12;
-	text-align: center;
-}
+		div.mh-banner-content-filler-second {
+			grid-column: 9 / span 4;
+		}
 
-.mh-banner-content a {
-	color: $banner-link-color;
-	text-decoration: none;
-}
+		div.mh-banner-content-center {
+			grid-column: 1 / span 12;
+			text-align: center;
+		}
 
-.mh-banner-content a:hover {
-	filter: brightness(90%);
-	text-decoration: underline;
-}
+		a {
+			color: $banner-link-color;
+			text-decoration: none;
 
-.mh-banner-content:hover {
-	.mh-banner-header {
-		background-color: pink;
-		z-index: 1000;
+			&:hover {
+				filter: brightness(90%);
+				text-decoration: underline;
+			}
+		}
 	}
 }

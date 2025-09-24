@@ -1,5 +1,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    /* Download file with confirmation */
+
     function downloadFile(url) {
       const fileName = url.split('/').pop();
       const link = document.createElement('a');
@@ -72,11 +74,9 @@
 
       pre.parentNode.insertBefore(button, pre);
     });
-});
-</script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
+    /* Banner for Matthew's official websites */
+
     const header = document.querySelector(".mh-banner-header");
     if (header) {
       header.innerHTML = `
@@ -86,7 +86,7 @@
         <div class="mh-banner-content-center"><strong>Welcome to one of Matthew's official websites!</strong><br/></div>
         <div class="mh-banner-content-filler-first">&nbsp;</div>
         <div>
-            <strong>Matthew's Websites</strong><br/
+            <strong>Matthew's Websites</strong><br/>
             <ul>
                 <li><a href="https://matthewhanna.com">Business Website</a></li>
                 <li><a href="https://matthewhanna.net">Resume Website</a> &check;</li>
@@ -96,7 +96,7 @@
         </div>
         <div>&nbsp;</div>
         <div>
-            <strong>Managed Websites</strong><br/
+            <strong>Managed Websites</strong><br/>
             <ul>
                 <li><a href="https://jhausman.ninja">Jessica Hausman</a></li>
                 <li><a href="https://msgdrinking.ninja">Drinking Giraffe Blog</a></li>
@@ -110,14 +110,13 @@
 `;
 
       if (!header.style.backgroundColor) {
-          header.style.backgroundColor = window.getComputedStyle(document.body).getPropertyValue("background-color");
+        header.style.backgroundColor = window.getComputedStyle(document.body).getPropertyValue("background-color");
       }
 
       const banner = header.querySelector(".mh-banner");
       if (banner) {
         if (!header.style.color) {
           header.style.color = window.getComputedStyle(banner).getPropertyValue("color");
-          console.log(`${window.getComputedStyle(header).getPropertyValue("background-color")}`);
         }
 
         banner.addEventListener("click", function () {
@@ -125,10 +124,10 @@
           var content = this.nextElementSibling;
           if (content.style.maxHeight) {
             content.style.maxHeight = null;
-            header.style.zIndex = 400;
+            //header.style.zIndex = 400;
           } else {
             content.style.maxHeight = content.scrollHeight + "px";
-            header.style.zIndex = 1000;
+            //header.style.zIndex = 1000;
           }
         });
       }
