@@ -27,6 +27,10 @@ permalink: /udemy/
     <img src="/images/Udemy-Certificate-Working-with-Web-APIs-in-Microsoft-Power-Automate.png" class="img-rounded">
     <img src="/images/Udemy-Certificate-Zero-to-Hero-in-LangChain-Build-GenAI-apps-using-LangChain.png" class="img-rounded">
     <img src="/images/Udemy-Certificate-Zero-to-Hero-in-Ollama-Create-Local-LLM-Applications.png" class="img-rounded">
+    <img src="/images/Udemy-Certificate-Ultimate-ASPNET-Core-Web-API-Development-Guide.png" class="img-rounded">
+    <img src="/images/Udemy-Certificate-Entity-Framework-Core-A-Full-Tour.png" class="img-rounded">
+    <img src="/images/Udemy-Certificate-PowerApps-Complete-Guide-to-Microsoft-PowerApps.png" class="img-rounded">
+    <img src="/images/Udemy-Certificate-ASPNET-Core-SOLID-and-Clean-Architecture.png" class="img-rounded">
 </div>
 
 <p/>
